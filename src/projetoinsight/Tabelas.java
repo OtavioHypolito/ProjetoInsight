@@ -526,13 +526,16 @@ public class Tabelas extends javax.swing.JFrame {
             if(i % 2 == 0){
               switch(horarioTrabalho.compareTo(horarioMarcacao)){
                   case -1:
-                  
+                      System.out.println("menor");
+                      tableHorarioTrabalho.getValueAt(1, 1);
+                      //jTableAtraso.setValueAt(horarioTrabalho, 1, 1);
+                     
                   break;
                   case 0:
-                      
+                      System.out.println("igual");
                   break;
                   case 1:
-                  
+                      System.out.println("maior");
                   break;
               }   
             }else{
